@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "tdd-fastapi"
+version = "0.1.0"
+description = "A pydantic take on FastAPI"
+authors = [ "sean glynn <seanglynn06@hotmail.com>"]
+packages = [
+    { include = "project" },
+    { include = "project/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^1.8.1"
+fastapi = "0.65.3"
+uvicorn = "0.14.0"
+
+[tool.poetry.dev-dependencies]
+typer = "^0.3.2"
+pytest = "^6.2.5"
+responses = "^0.15.0"
+httpx = "^0.20.0"
+trio = "^0.19.0"
+pytest-asyncio = "^0.16.0"
+pytest-aiohttp = "^0.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
