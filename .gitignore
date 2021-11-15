@@ -1,3 +1,4 @@
 .tox
 project/.tox
 project/env
+project/app/__pycache__
