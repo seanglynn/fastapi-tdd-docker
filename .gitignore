@@ -2,3 +2,4 @@
 project/.tox
 project/env
 project/app/__pycache__
+project/tests/__pycache__/
